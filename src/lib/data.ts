@@ -190,7 +190,7 @@ export const experience: ExperienceEntry[] = [
     company: "EEKI Foods",
     period: "Mar 2025 – May 2025",
     sortYear: 2025,
-    location: "Nashik, India",
+    location: "Rajasthan, India",
     highlights: [
       "Led GIS-based flood risk assessment combining hydraulic modelling and spatial exposure analysis, reducing mapped hazard zones by 32% through improved exposure delineation.",
       "Produced terrain models, grading plans, and stormwater drainage designs in Civil 3D and ArcGIS, supporting infrastructure adaptation planning decisions.",
