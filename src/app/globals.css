@@ -225,7 +225,7 @@ body {
   height: 94%;
   width: auto;
   aspect-ratio: 3 / 4;
-  max-width: min(30vw, 280px);
+  max-width: min(42vw, 420px);
   max-height: 100%;
 }
 
