@@ -222,7 +222,7 @@ body {
 
 .hero-portrait-frame {
   position: relative;
-  height: 94%;
+  height: 96%;
   width: auto;
   aspect-ratio: 3 / 4;
   max-width: min(42vw, 420px);
