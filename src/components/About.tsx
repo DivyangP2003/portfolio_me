@@ -72,7 +72,7 @@ export default function About() {
             className="about-card p-7 sm:p-9 lg:col-span-8"
           >
             <h3 className="text-xl font-semibold leading-snug text-white sm:text-2xl">
-              Environmental engineer and full-stack developer
+              Civil-Environmental engineer and full-stack developer
             </h3>
 
             <div className="body-lg mt-5 max-w-2xl space-y-4">
@@ -88,7 +88,7 @@ export default function About() {
                 Streamlit.
               </p>
               <p className="text-sm text-white/50">
-                Internships at EEKI Foods, AICOE (Ministry of Education), and Jal Jeevan Mission.
+                Worked at EEKI Foods, Internship at AICOE (Ministry of Education), and Jal Jeevan Mission.
               </p>
             </div>
           </motion.div>
