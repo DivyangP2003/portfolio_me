@@ -69,7 +69,7 @@ export const profile = {
 
   // Hero body copy — replaces the old vague one-liner
   tagline:
-    "I simulate wildfires at 1 km resolution and ship production AI applications. Research-grade atmospheric science meets full-stack engineering.",
+    "Where atmospheric physics meets production software — research-grade wildfire modelling and deployed AI applications, from the same desk",
 
   location: "IIT Jodhpur, Rajasthan, India",
   email: "palshetkardivyang@gmail.com",
@@ -880,17 +880,17 @@ export const resumesNote =
 
 export const resumes = [
   {
-    title: "Full Stack Résumé",
+    title: "Full Stack Resume",
     description: "Software, product, AI app, and web engineering roles",
     href: "/resumes/FullStack_Resume.pdf",
   },
   {
-    title: "Environmental Engineering Résumé",
+    title: "Environmental Engineering Resume",
     description: "Climate risk, GIS, fire science, and environmental roles",
     href: "/resumes/Environment_Engineering_Resume.pdf",
   },
   {
-    title: "Fire Scientist Résumé",
+    title: "Fire Scientist Resume",
     description: "Wildfire modelling, atmospheric science, and WRF research roles",
     href: "/resumes/Fire_Scientist_Resume.pdf",
   },
