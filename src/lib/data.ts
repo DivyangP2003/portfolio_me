@@ -65,7 +65,7 @@ export const profile = {
   shortName: "Divyang Palshetkar",
 
   // Shown under the name in the hero — one tight line
-  title: "Environmental Engineer · Full-Stack Developer · Climate Modeller",
+  title: "Environmental Engineer · Civil Engineer · Full-Stack Developer · Climate Modeller",
 
   // Hero body copy — replaces the old vague one-liner
   tagline:
