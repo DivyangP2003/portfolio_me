@@ -73,7 +73,7 @@ export default function Contact() {
                 LinkedIn
               </a>
               <a
-                href={`mailto:${profile.email}`}
+                href={`mailto:${profile.email}?subject=Collaboration%20Opportunity&body=Hi%20Divyang,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0APlease%20feel%20free%20to%20get%20back%20to%20me.%0D%0A%0D%0AThank%20you`}
                 className="btn-primary mt-2 justify-center !bg-black !text-white"
               >
                 <Send size={16} />
