@@ -56,18 +56,18 @@ function EditorialCard({
         <div className={cn("absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/20 opacity-80", grad)} />
       </div>
 
-      <div className="absolute inset-0 z-10 flex flex-col justify-end p-7 sm:p-9">
+      <div className="absolute inset-0 z-10 flex flex-col justify-end p-4 sm:p-6 md:p-7 lg:p-9">
         {project.tier && (
           <span className="mb-3 w-fit text-[10px] tracking-[0.25em] text-gold/80 uppercase">{project.tier}</span>
         )}
-        <h3 className="font-display text-3xl leading-none tracking-wide text-white uppercase sm:text-4xl lg:text-5xl">
+        <h3 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-none tracking-wide text-white uppercase">
           {project.name}
         </h3>
-        <p className="mt-4 line-clamp-2 text-sm leading-relaxed text-white/70 sm:text-base">
+        <p className="mt-2 sm:mt-4 line-clamp-2 text-xs sm:text-sm md:text-base leading-relaxed text-white/70">
           {project.description}
         </p>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-2 sm:mt-4 flex flex-wrap gap-1 sm:gap-2">
           {project.stack.slice(0, 4).map((s) => (
             <span key={s} className="text-[10px] tracking-wider text-white/45 uppercase">
               {s}
@@ -126,7 +126,7 @@ export default function Projects() {
       <div className="section-container">
         <SectionHeader title="Projects" mega align="left" className="mb-16" />
 
-        <div className="mb-12 flex flex-wrap gap-3">
+        <div className="mb-8 sm:mb-12 flex flex-wrap gap-2 sm:gap-3">
           {categoryFilters.map((cat) => (
             <button
               key={cat.key}
@@ -148,7 +148,7 @@ export default function Projects() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8"
+            className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 md:gap-8"
           >
             {shown.map((p) => (
               <EditorialCard key={p.name} project={p} onOpen={setSelected} />

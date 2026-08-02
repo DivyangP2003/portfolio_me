@@ -12,12 +12,12 @@ export default function Hero() {
 
   return (
     <section className="relative flex min-h-[100dvh] flex-col items-center justify-center overflow-hidden bg-black pt-24">
-      <div className="relative flex w-full flex-col items-center px-1 pb-20 pt-8 sm:px-2">
+      <div className="relative flex w-full flex-col items-center px-2 sm:px-4 pb-16 sm:pb-20 pt-6 sm:pt-8">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="eyebrow mb-5 text-center text-gold"
+          className="eyebrow mb-3 sm:mb-5 text-center text-gold text-xs sm:text-sm"
         >
           Introducing
         </motion.p>
@@ -26,7 +26,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="font-script mb-8 text-center text-3xl text-white/90 sm:text-4xl md:text-5xl"
+          className="font-script mb-6 sm:mb-8 text-center text-2xl xs:text-3xl sm:text-4xl md:text-5xl text-white/90"
         >
           Engineer & Developer
         </motion.p>
@@ -87,7 +87,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.05 }}
-          className="mt-10 flex flex-wrap justify-center gap-4"
+          className="mt-6 sm:mt-8 md:mt-10 flex flex-wrap justify-center gap-3 sm:gap-4 px-2"
         >
           <a href="#projects" className="btn-primary">
             View Work
@@ -98,7 +98,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="w-full border-t border-white/10 py-4">
+      <div className="w-full border-t border-white/10 py-3 sm:py-4 overflow-x-hidden">
         <Marquee items={marqueeSkills} />
       </div>
 

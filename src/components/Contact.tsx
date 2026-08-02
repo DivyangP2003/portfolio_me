@@ -13,7 +13,7 @@ export default function Contact() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="heading-section mb-14 text-center"
+          className="heading-section mb-10 sm:mb-12 lg:mb-14 text-center"
         >
           Contact
         </motion.h2>
@@ -24,8 +24,8 @@ export default function Contact() {
           viewport={{ once: true }}
           className="card-light mx-auto max-w-3xl overflow-hidden"
         >
-          <div className="grid lg:grid-cols-2">
-            <div className="border-b border-neutral-200 p-8 sm:p-10 lg:border-b-0 lg:border-r">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="border-b border-neutral-200 p-6 sm:p-8 md:p-10 lg:border-b-0 lg:border-r">
               <h3 className="heading-card text-xl">Get in touch</h3>
               <p className="body-on-light mt-3 text-sm">
                 Open to climate risk, GIS, fire science, and full-stack AI product roles.
@@ -53,7 +53,7 @@ export default function Contact() {
               </ul>
             </div>
 
-            <div className="flex flex-col justify-center gap-3 p-8 sm:p-10">
+            <div className="flex flex-col justify-center gap-3 p-6 sm:p-8 md:p-10">
               <a
                 href={profile.github}
                 target="_blank"

@@ -34,7 +34,7 @@ function TimelineColumn({
 }) {
   return (
     <div>
-      <h3 className="font-display mb-10 text-3xl tracking-[0.12em] text-white uppercase sm:text-4xl">
+      <h3 className="font-display mb-8 sm:mb-10 text-2xl sm:text-3xl md:text-4xl tracking-[0.12em] text-white uppercase">
         <span className="text-gold">{title.split(" ")[0]}</span>
         {title.includes(" ") ? ` ${title.split(" ").slice(1).join(" ")}` : ""}
       </h3>
@@ -66,7 +66,7 @@ function TimelineItem({
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.08 }}
-      className="relative pl-10 pb-12 last:pb-0"
+      className="relative pl-8 sm:pl-10 pb-8 sm:pb-10 md:pb-12 last:pb-0"
     >
       {!isLast && (
         <span
@@ -79,9 +79,9 @@ function TimelineItem({
       </span>
 
       <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-        <span className="font-display text-4xl leading-none text-gold/40 sm:text-5xl">{year}</span>
+        <span className="font-display text-3xl sm:text-4xl md:text-5xl leading-none text-gold/40">{year}</span>
         <div className="min-w-0 flex-1">
-          <h4 className="font-display text-xl tracking-wide text-white uppercase sm:text-2xl">{title}</h4>
+          <h4 className="font-display text-lg sm:text-xl md:text-2xl tracking-wide text-white uppercase">{title}</h4>
           <p className="mt-1 text-sm text-white/50">{subtitle}</p>
         </div>
       </div>
@@ -110,14 +110,14 @@ export default function Journey() {
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
+          className="mb-12 sm:mb-14 lg:mb-16 flex flex-col gap-3 sm:gap-4 sm:flex-row sm:items-end sm:justify-between"
         >
           <h2 className="heading-section">
             Education & <span className="text-gold">Experience</span>
           </h2>
         </motion.div>
 
-        <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
+        <div className="grid gap-10 sm:gap-14 md:gap-16 lg:grid-cols-2 lg:gap-20">
           <TimelineColumn title="Education">
             {eduSorted.map((edu, i) => (
               <TimelineItem

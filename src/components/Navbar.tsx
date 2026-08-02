@@ -43,12 +43,12 @@ export default function Navbar() {
         scrolled ? "bg-black/90 backdrop-blur-md border-b border-white/10" : "bg-transparent"
       )}
     >
-      <nav className="section-container flex items-center justify-between py-5 lg:py-6">
-        <a href="#" className="text-sm font-semibold tracking-[0.15em] text-white uppercase">
+      <nav className="section-container flex items-center justify-between py-3 sm:py-4 md:py-5 lg:py-6">
+        <a href="#" className="text-xs sm:text-sm font-semibold tracking-[0.15em] text-white uppercase">
           {profile.shortName.split(" ")[0]}
         </a>
 
-        <ul className="hidden items-center gap-10 lg:flex">
+        <ul className="hidden items-center gap-6 md:gap-8 lg:gap-10 md:flex">
           {navItems.map((link) => {
             const id = link.href.replace("#", "");
             return (
@@ -67,17 +67,17 @@ export default function Navbar() {
           })}
         </ul>
 
-        <p className="hidden text-right text-[11px] leading-relaxed tracking-wide text-white/40 xl:block">
+        <p className="hidden text-right text-[10px] sm:text-[11px] leading-relaxed tracking-wide text-white/40 lg:block">
           {profile.title}
         </p>
 
         <button
           type="button"
           aria-label="Menu"
-          className="text-white/70 lg:hidden"
+          className="text-white/70 md:hidden"
           onClick={() => setMobileOpen((v) => !v)}
         >
-          {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+          {mobileOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </nav>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="border-t border-white/10 bg-black px-6 py-6 lg:hidden"
+          className="border-t border-white/10 bg-black px-4 sm:px-6 py-6 md:hidden"
         >
           <ul className="flex flex-col gap-4">
             {navItems.map((link) => (
@@ -93,7 +93,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-sm tracking-[0.2em] text-white/70 uppercase"
+                  className="text-sm sm:text-base tracking-[0.2em] text-white/70 uppercase hover:text-white transition-colors"
                 >
                   {link.label}
                 </a>

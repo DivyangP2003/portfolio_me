@@ -369,3 +369,80 @@ body {
 ::-webkit-scrollbar-track { background: #000; }
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
 ::selection { background: rgba(255, 255, 255, 0.2); color: #fff; }
+
+
+/* ========== RESPONSIVE IMPROVEMENTS ========== */
+
+/* Mobile-first button sizing */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-outline {
+    font-size: 0.875rem;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .heading-section {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  .body-lg {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+  }
+  
+  .body-md {
+    font-size: clamp(0.75rem, 2vw, 0.875rem);
+  }
+}
+
+/* Tablet improvements */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .section-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* Ensure horizontal scrolling doesn't happen */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 768px) {
+  a, button {
+    min-height: 2.5rem;
+  }
+}
+
+/* Improve text rendering on mobile */
+@media (max-width: 640px) {
+  html {
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
+/* Image optimization for mobile */
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Fix for mobile keyboard */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero-name-stack {
+    min-height: auto;
+  }
+}
+
+/* Prevent zoom on input focus */
+input, textarea, select {
+  font-size: 16px;
+}
