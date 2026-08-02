@@ -71,9 +71,8 @@ export const profile = {
   tagline:
     "Where atmospheric physics meets production software — research-grade wildfire modelling and deployed AI applications, from the same desk",
 
-  location: "IIT Jodhpur, Rajasthan, India",
+  location: "Navi Mumbai, Maharashtra, India",
   email: "palshetkardivyang@gmail.com",
-  academicEmail: "palshetkar.1@iitj.ac.in",
   phone: "+91-9359849585",
   github: "https://github.com/DivyangP2003",
   linkedin: "https://www.linkedin.com/in/divyang-palshetkar23",
