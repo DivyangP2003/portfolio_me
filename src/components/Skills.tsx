@@ -16,7 +16,7 @@ export default function Skills() {
           Skills
         </motion.h2>
 
-        <div className="grid gap-5 sm:grid-cols-2">
+        <div className="grid gap-3 sm:gap-4 md:gap-5 sm:grid-cols-2">
           {skillGroups.map((group, i) => (
             <motion.div
               key={group.title}
@@ -24,9 +24,9 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.06 }}
-              className="card-dark p-7"
+              className="card-dark p-4 sm:p-5 md:p-6 lg:p-7"
             >
-              <h3 className="font-display text-xl tracking-wide text-white uppercase">{group.title}</h3>
+              <h3 className="font-display text-lg sm:text-xl tracking-wide text-white uppercase">{group.title}</h3>
               <div className="mt-5 flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <span key={skill} className="tag">{skill}</span>
@@ -37,8 +37,8 @@ export default function Skills() {
         </div>
 
         <div className="mt-16">
-          <h3 className="font-display mb-8 text-2xl tracking-wide text-white uppercase">Leadership</h3>
-          <div className="grid gap-5 sm:grid-cols-2">
+          <h3 className="font-display mb-6 sm:mb-8 text-xl sm:text-2xl tracking-wide text-white uppercase">Leadership</h3>
+          <div className="grid gap-3 sm:gap-4 md:gap-5 sm:grid-cols-2">
             {leadership.map((item) => (
               <div key={item.role} className="card-dark p-6">
                 <p className="font-medium text-white">{item.role}</p>

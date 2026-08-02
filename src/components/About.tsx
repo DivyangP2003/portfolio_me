@@ -18,7 +18,7 @@ export default function About() {
       />
 
       <div className="section-container relative">
-        <div className="mb-14 lg:mb-16">
+        <div className="mb-10 sm:mb-12 lg:mb-14 xl:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export default function About() {
         </div>
 
         {/* Portrait + bio — same row height */}
-        <div className="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-12 lg:items-start">
+        <div className="grid grid-cols-1 gap-3 sm:gap-4 md:gap-5 lg:grid-cols-12 lg:items-start">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -71,7 +71,7 @@ export default function About() {
             viewport={{ once: true }}
             className="about-card p-7 sm:p-9 lg:col-span-8"
           >
-            <h3 className="text-xl font-semibold leading-snug text-white sm:text-2xl">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold leading-snug text-white">
               Civil-Environmental engineer and full-stack developer
             </h3>
 
@@ -95,7 +95,7 @@ export default function About() {
         </div>
 
         {/* All 6 metrics in one row */}
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:mt-5 lg:grid-cols-6">
+        <div className="mt-3 sm:mt-4 grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 sm:grid-cols-3 lg:mt-5 lg:grid-cols-6">
           {metrics.map((m, i) => (
             <motion.div
               key={m.label}
@@ -103,7 +103,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="about-card flex min-h-[100px] flex-col items-center justify-center p-3 text-center sm:min-h-[110px] sm:p-4"
+              className="about-card flex min-h-[90px] sm:min-h-[100px] md:min-h-[110px] flex-col items-center justify-center p-2 sm:p-3 md:p-4 text-center"
             >
               <p className="about-metric-value text-xl sm:text-2xl">{m.value}</p>
               <p className="mt-1.5 text-[8px] leading-snug tracking-wide text-white/45 uppercase sm:text-[9px]">
@@ -117,7 +117,7 @@ export default function About() {
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-5 grid gap-4 lg:grid-cols-[1fr_auto]"
+          className="mt-4 sm:mt-5 grid gap-3 sm:gap-4 lg:grid-cols-[1fr_auto]"
         >
           <div className="about-card p-6 sm:p-7">
             <p className="text-[10px] tracking-[0.3em] text-gold uppercase">Outside the lab</p>
