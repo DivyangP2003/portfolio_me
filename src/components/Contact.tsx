@@ -33,7 +33,6 @@ export default function Contact() {
               <ul className="mt-8 space-y-4">
                 {[
                   { icon: Mail, text: profile.email, href: `mailto:${profile.email}` },
-                  { icon: Mail, text: profile.academicEmail, href: `mailto:${profile.academicEmail}` },
                   { icon: Phone, text: profile.phone },
                   { icon: MapPin, text: profile.location },
                 ].map(({ icon: Icon, text, href }) => (
