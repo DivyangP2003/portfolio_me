@@ -885,14 +885,9 @@ export const resumes = [
     href: "/resumes/FullStack_Resume.pdf",
   },
   {
-    title: "Environmental Engineering Resume",
-    description: "Climate risk, GIS, fire science, and environmental roles",
-    href: "/resumes/Environment_Engineering_Resume.pdf",
-  },
-  {
-    title: "Fire Scientist Resume",
-    description: "Wildfire modelling, atmospheric science, and WRF research roles",
-    href: "/resumes/Fire_Scientist_Resume.pdf",
+    title: "Civil Environmental Engineering Resume",
+    description: "Climate risk, GIS, fire science, and civil environmental roles",
+    href: "/resumes/Civil_Environment_Resume.pdf",
   },
   {
     title: "JJM Internship Report",
