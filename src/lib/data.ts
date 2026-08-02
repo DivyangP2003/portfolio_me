@@ -895,7 +895,7 @@ export const resumes = [
     href: "/resumes/JJM_Internship_Report.pdf",
   },
   {
-    title: "M.Tech Thesis (98 pages)",
+    title: "M.Tech Thesis",
     description: "WRF-Chem-Fire wildfire simulation — full project report",
     href: "/thesis/Divyang_MTech_Thesis.pdf",
   },
